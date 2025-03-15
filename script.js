@@ -8,7 +8,7 @@ let score = 0;
 // Function to generate a trivia question using OpenAI
 async function generateTriviaQuestion(topic, difficulty) {
   const endpoint = 'https://geoji-m8ajv2qy-eastus2.openai.azure.com/'; // Replace with your Azure OpenAI endpoint
-  const apiKey = '5r1EXcQeEqZmbBoP7EXoQOHPesEVxY0n0BbNZNPfTpAyPJTFZEuNJQQJ99BCACHYHv6XJ3w3AAAAACOGbIqV'; // Replace with your Azure OpenAI API key
+  const apiKey = ''; // Replace with your Azure OpenAI API key
 
   try {
     const response = await fetch(`${endpoint}/openai/deployments/gpt-4o/chat/completions?api-version=2024-05-01-preview`, {
