@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz Game</h1>
+    <p id="question">What is the capital of France?</p>
+    <button onclick="checkAnswer('Paris')">Paris</button>
+    <button onclick="checkAnswer('London')">London</button>
+    <button onclick="checkAnswer('Berlin')">Berlin</button>
+    <p id="feedback"></p>
+
+    <script>
+      function checkAnswer(answer) {
+        const correctAnswer = 'Paris';
+        if (answer === correctAnswer) {
+          document.getElementById('feedback').innerHTML = 'Correct! 🎉';
+        } else {
+          document.getElementById('feedback').innerHTML = 'Incorrect. Try again! 😢';
+        }
+      }
+    </script>
+</body>
+</html>
