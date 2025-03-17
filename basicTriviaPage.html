@@ -1,38 +1,20 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Quiz Game</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        button {
-            padding: 10px 20px;
-            margin: 10px;
-            font-size: 16px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Trivia Quiz</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Quiz Game</h1>
-    <p id="question">What is the capital of France?</p>
-    <button onclick="checkAnswer('Paris')">Paris</button>
-    <button onclick="checkAnswer('London')">London</button>
-    <button onclick="checkAnswer('Berlin')">Berlin</button>
-    <p id="feedback"></p>
+    <div class="quiz-container">
+        <h1>AI Trivia Quiz</h1>
+        <p id="question">Loading question...</p>
+        <div id="choices" class="choices"></div>
+        <button id="next-button">Next Question</button>
+        <p id="score">Score: 0</p>
+    </div>
 
-    <script>
-      function checkAnswer(answer) {
-        const correctAnswer = 'Paris';
-        if (answer === correctAnswer) {
-          document.getElementById('feedback').innerHTML = 'Correct! 🎉';
-        } else {
-          document.getElementById('feedback').innerHTML = 'Incorrect. Try again! 😢';
-        }
-      }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
